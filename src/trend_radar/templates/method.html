@@ -19,10 +19,13 @@
   <p>MAD, değerlerin medyandan mutlak sapmalarının medyanıdır. 1,4826 katsayısı onu standart sapmayla karşılaştırılabilir yapar. Liste, normalin üstündeki fazladan görüntülenme sayısına göre sıralanır.</p>
 
   <h2>İki aşamalı hesap</h2>
-  <p>Önce yalnızca saklanan günlük 1.000'lik listelerle tarama yapılır. Bir sayfa bir günün listesinde yoksa, o gün listenin son sırasındaki sayfadan az okunmuştur. Bu durumda o sınır değer kullanılır. Böylece tahmin edilen normal gerçekte olduğundan yüksek olabilir ama asla düşük olmaz, yani tarama bir sıçramayı abartmaz. Ardından en güçlü 40 aday için sayfanın tam günlük geçmişi alınır ve son skor onunla hesaplanır. Bu yöntem günde 1.000 yerine yaklaşık 45 istekle çalışır.</p>
+  <p>Önce yalnızca saklanan günlük 1.000'lik listelerle tarama yapılır. Bir sayfa bir günün listesinde yoksa, o gün listenin son sırasındaki sayfadan az okunmuştur. Bu durumda o sınır değer kullanılır. Böylece tahmin edilen normal gerçekte olduğundan yüksek olabilir ama asla düşük olmaz, yani tarama bir sıçramayı abartmaz. Ardından en güçlü 40 aday için sayfanın tam günlük geçmişi alınır ve son skor onunla hesaplanır. Böylece günde 1.000 yerine yaklaşık 45 istek yeterli olur.</p>
 
-  <h2>Bot filtresi</h2>
-  <p>Wikimedia'nın filtresinden kaçan otomatik trafik neredeyse her zaman masaüstünden gelir, Türkiye'den gelen gerçek ilgi ise büyük ölçüde mobilden. Görüntülenmelerinin %80'inden fazlası masaüstünden gelen sıçramalar listeye alınmaz ve sayfanın altında ayrıca gösterilir.</p>
+  <h2>Otomatik trafik filtresi</h2>
+  <p>Wikimedia bilinen botları zaten ayıklar, ama bir kısmı gözden kaçar. Radar iki işarete bakar:</p>
+  <p><strong>Masaüstü payı.</strong> Gözden kaçan otomatik trafik neredeyse her zaman masaüstünden gelir, Türkiye'den gelen gerçek ilgi ise büyük ölçüde mobilden. Görüntülenmelerinin %80'inden fazlası masaüstünden gelen sıçramalar elenir.</p>
+  <p><strong>Kilit adım.</strong> İnsanlar birbiriyle ilgisiz sayfalara eşit dağılmaz. Aynı gün en az dört sayfanın fazladan görüntülenmesi birbirinin %3 yakınındaysa (örneğin Tarih, Coğrafya, Sanat ve Bilim'in her biri tam ~5.900 fazla), bu tek bir otomatik kaynağın işaretidir ve grup elenir.</p>
+  <p>Elenen sayfalar her günün altında ayrıca listelenir.</p>
 
   <h2>Ne yapmaz?</h2>
   <p>Radar bir sayfanın <em>neden</em> merak edildiğini söylemez, yalnızca ilginin ne kadar alışılmadık olduğunu ölçer. Yetişkin içerikli maddeler listeye alınmaz.</p>

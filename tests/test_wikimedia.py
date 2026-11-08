@@ -115,7 +115,8 @@ def test_client_retries_rate_limits_and_maps_404(monkeypatch: pytest.MonkeyPatch
             assert await api.top(date(2026, 11, 8)) is None
 
     asyncio.run(go())
-    assert calls["n"] == 3
+    # one rate-limited try, one success, then three tries before the 404 is believed
+    assert calls["n"] == 5
 
 
 def test_client_builds_encoded_per_article_url() -> None:

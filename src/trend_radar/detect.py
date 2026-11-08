@@ -133,3 +133,21 @@ def mobile_share(article: str, views: int, desktop: TopList | None) -> float | N
             return None  # the bound says nothing
         seen = desktop.cutoff
     return max(0.0, 1.0 - seen / views)
+
+
+def lockstep(excess: Mapping[str, float], tolerance: float, size: int) -> set[str]:
+    """Pages whose extra views are almost identical on the same day.
+
+    People who look something up do not spread themselves evenly over unrelated pages. When
+    four or more pages gain the same number of views to within a few percent, one automated
+    source (a bot, an app widget, a link placement) is hitting them all.
+    """
+    items = sorted((v, a) for a, v in excess.items() if v > 0)
+    flagged: set[str] = set()
+    for i, (low, _) in enumerate(items):
+        j = i
+        while j + 1 < len(items) and items[j + 1][0] <= low * (1 + tolerance):
+            j += 1
+        if j - i + 1 >= size:
+            flagged.update(a for _, a in items[i : j + 1])
+    return flagged

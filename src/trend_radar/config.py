@@ -88,6 +88,8 @@ class Settings:
     candidates: int = 40  # exact histories fetched per day
     max_spikes: int = 20  # spikes published per day
     min_mobile_share: float = 0.2  # below this, a spike looks like automated desktop traffic
+    lockstep_tolerance: float = 0.03  # extra views within 3% of each other...
+    lockstep_size: int = 4  # ...on at least 4 pages: one automated source, not people
 
     def as_dict(self) -> dict[str, float | int]:
         return asdict(self)

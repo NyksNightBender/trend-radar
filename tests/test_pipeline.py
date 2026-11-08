@@ -14,7 +14,7 @@ def test_end_to_end(tmp_path: Path) -> None:
     api = FakeApi()
     tomorrow = DAY + timedelta(days=1)
     written = asyncio.run(run(store, api, Settings(), today=tomorrow))
-    assert written == [DAY - timedelta(days=i) for i in (2, 1, 0)]
+    assert written == [DAY - timedelta(days=i) for i in range(6, -1, -1)]  # a week of lookback
 
     day = store.load_day(DAY)
     titles = [s["article"] for s in day["spikes"]]
@@ -22,7 +22,11 @@ def test_end_to_end(tmp_path: Path) -> None:
     spike = day["spikes"][0]
     assert spike["views"] == 60_000 and spike["usual"] == 400 and spike["ratio"] == 150
     assert spike["history"]["views"][-1] == 60_000 and len(spike["history"]["views"]) == 42
-    assert [b["article"] for b in day["bots"]] == ["Bot_Sayfa"]
+    reasons = {b["article"]: b["reason"] for b in day["bots"]}
+    assert reasons == {
+        "Bot_Sayfa": "desktop",
+        **{f"Genel_{i}": "lockstep" for i in range(1, 5)},
+    }
     assert day["stats"]["hidden"] == 1  # the sensitive page
     assert api.daily_calls <= 3 * Settings().candidates  # screening keeps API use small
 

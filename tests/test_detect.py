@@ -8,6 +8,7 @@ from trend_radar.detect import (
     baseline_from_history,
     baseline_from_top_lists,
     is_spike,
+    lockstep,
     mobile_share,
     score,
 )
@@ -58,3 +59,18 @@ def test_mobile_share() -> None:
     assert mobile_share("Yok", 10_000, desktop) == approx(0.92)  # lower bound from the cutoff
     assert mobile_share("Yok", 500, desktop) is None  # cutoff above the views: no information
     assert mobile_share("Bot", 10_000, None) is None
+
+
+def test_lockstep_finds_groups_with_equal_extra_views() -> None:
+    excess = {
+        "Tarih": 5_929,
+        "Sanat": 5_890,
+        "Bilim": 5_823,
+        "Teknoloji": 5_942,
+        "Maç": 48_000,
+        "Oyuncu": 9_100,
+        "Kulüp": 8_700,
+    }
+    assert lockstep(excess, 0.03, 4) == {"Tarih", "Sanat", "Bilim", "Teknoloji"}
+    assert lockstep(excess, 0.03, 5) == set()
+    assert lockstep({"A": 1_000, "B": 1_010, "C": 1_020}, 0.03, 4) == set()

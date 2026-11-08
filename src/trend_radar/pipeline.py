@@ -13,6 +13,7 @@ from .detect import (
     TopList,
     baseline_from_history,
     is_spike,
+    lockstep,
     mobile_share,
     score,
     screen,
@@ -34,7 +35,7 @@ def utc_today() -> date:
     return datetime.now(UTC).date()
 
 
-def target_days(store: Store, today: date, backfill: int = 0, lookback: int = 3) -> list[date]:
+def target_days(store: Store, today: date, backfill: int = 0, lookback: int = 7) -> list[date]:
     """Yesterday, plus recent days that were missed or a requested backfill, oldest first.
 
     Days are UTC days, the same calendar GitHub uses for the contribution graph.
@@ -107,17 +108,29 @@ async def analyse_day(
     found.sort(key=lambda item: item[1].excess, reverse=True)
 
     desktop = await api.top(day, access="desktop")
+    same_source = lockstep(
+        {article: s.excess for article, s, *_ in found},
+        settings.lockstep_tolerance,
+        settings.lockstep_size,
+    )
     kept: list[tuple[str, Score, list[int | None], bool, float | None]] = []
     bots: list[dict[str, Any]] = []
     for article, s, series, approximate in found:
         share = mobile_share(article, s.views, desktop)
-        if share is not None and share < settings.min_mobile_share:
+        reason = None
+        if article in same_source:
+            reason = "lockstep"
+        elif share is not None and share < settings.min_mobile_share:
+            reason = "desktop"
+        if reason:
             bots.append(
                 {
                     "article": article,
                     "title": display(article),
                     "views": s.views,
-                    "mobile_share": round(share, 2),
+                    "usual": round(s.median),
+                    "mobile_share": None if share is None else round(share, 2),
+                    "reason": reason,
                 }
             )
         else:

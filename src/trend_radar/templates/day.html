@@ -53,13 +53,13 @@
 
 {% if day.bots %}
 <details class="bots">
-  <summary>Bot trafiği şüphesiyle elenen {{ day.bots|length }} sayfa</summary>
+  <summary>Otomatik trafik şüphesiyle elenen {{ day.bots|length }} sayfa</summary>
   <ul>
   {% for b in day.bots %}
-    <li>{{ b.title }} <span>{{ b.views|tr_int }} görüntülenme, mobil payı %{{ (b.mobile_share * 100)|round|int }}</span></li>
+    <li>{{ b.title }} <span>{{ b.views|tr_int }} görüntülenme · {% if b.reason == "lockstep" %}aynı gün neredeyse aynı sayıda fazladan görüntülenme alan sayfa grubundan{% else %}mobil payı %{{ (b.mobile_share * 100)|round|int }}{% endif %}</span></li>
   {% endfor %}
   </ul>
-  <p>Türkiye'den gelen gerçek ilgi büyük ölçüde mobilden gelir. Görüntülenmelerinin %80'inden fazlası masaüstünden gelen sıçramalar otomatik trafik sayılıp listeye alınmaz.</p>
+  <p>İki işaret aranır. Türkiye'den gelen gerçek ilgi büyük ölçüde mobilden gelir, bu yüzden görüntülenmelerinin %80'inden fazlası masaüstünden gelen sıçramalar elenir. İnsanlar da birbiriyle ilgisiz sayfalara aynı sayıda dağılmaz; aynı gün en az dört sayfa, normalinin üstüne %3 farkla aynı miktarda çıkıyorsa bunun tek bir otomatik kaynak olduğu varsayılır.</p>
 </details>
 {% endif %}
 

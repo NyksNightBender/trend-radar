@@ -96,9 +96,16 @@ class Wikimedia:
             follow_redirects=True,
         )
 
-    async def _get(self, url: str, params: dict[str, str] | None = None) -> Any | None:
-        """GET JSON; None on 404. Retries rate limits, server errors and network errors."""
+    async def _get(
+        self, url: str, params: dict[str, str] | None = None, not_found_tries: int = 1
+    ) -> Any | None:
+        """GET JSON; None on 404. Retries rate limits, server errors and network errors.
+
+        The Pageviews API sometimes answers 404 for data it does have and serves it on the next
+        try, so callers can ask for a few attempts before a 404 is taken as final.
+        """
         delay = 1.0
+        not_found = 0
         for attempt in range(1, self._retries + 1):
             async with self._limit:
                 self.requests += 1
@@ -110,7 +117,12 @@ class Wikimedia:
                     res = None
             if res is not None:
                 if res.status_code == 404:
-                    return None
+                    not_found += 1
+                    if not_found >= not_found_tries:
+                        return None
+                    await asyncio.sleep(delay)
+                    delay = min(delay * 2, 60.0)
+                    continue
                 if res.status_code < 400:
                     return res.json()
                 if res.status_code != 429 and res.status_code < 500:
@@ -127,7 +139,7 @@ class Wikimedia:
     async def top(self, day: date, access: str = "all-access") -> TopList | None:
         """The day's 1000 most viewed pages (human traffic), or None if not published yet."""
         url = f"{PAGEVIEWS_API}/top/{PROJECT}/{access}/{day:%Y/%m/%d}"
-        payload = await self._get(url)
+        payload = await self._get(url, not_found_tries=3)
         return None if payload is None else parse_top(day, payload)
 
     async def daily(self, article: str, start: date, end: date) -> dict[date, int]:
@@ -137,7 +149,7 @@ class Wikimedia:
             f"{PAGEVIEWS_API}/per-article/{PROJECT}/all-access/user/{title}/daily/"
             f"{start:%Y%m%d}00/{end:%Y%m%d}00"
         )
-        payload = await self._get(url)
+        payload = await self._get(url, not_found_tries=2)
         return {} if payload is None else parse_daily(payload)
 
     async def summaries(self, titles: list[str]) -> dict[str, Summary]:

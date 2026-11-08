@@ -8,9 +8,14 @@ from trend_radar.detect import TopList
 from trend_radar.wikimedia import Summary
 
 DAY = date(2026, 11, 7)
-STEADY = {f"Madde_{i}": 1_500 + 37 * i for i in range(1_100)}
+STEADY = {f"Madde_{i}": 100 + 3 * i for i in range(1_100)}  # list cutoff ~400, as on trwiki
 FIXED = {"Anasayfa": 900_000, "Özel:Ara": 300_000, "Mustafa_Kemal_Atatürk": 20_000}
 SPIKING = {
+    # Four unrelated pages that gain the same number of views: one automated source.
+    "Genel_1": (500, 6_400),
+    "Genel_2": (500, 6_420),
+    "Genel_3": (500, 6_380),
+    "Genel_4": (500, 6_440),
     "Patlayan_Madde": (400, 60_000),
     "Bot_Sayfa": (300, 40_000),
     "Hassas_Madde": (200, 30_000),

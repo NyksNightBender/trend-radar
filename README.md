@@ -32,7 +32,7 @@ flowchart LR
   A[Wikimedia top 1,000<br/>for yesterday] --> B[Screen with a censored<br/>baseline from stored lists]
   B --> C[Exact 42-day history<br/>for the 40 best candidates]
   C --> D[Robust z-score and ratio<br/>against the 28-day median]
-  D --> E[Bot filter<br/>by desktop share]
+  D --> E[Automated-traffic filter<br/>desktop share, lockstep]
   E --> F[Wikipedia summaries]
   F --> G[(data/days/*.json)]
   G --> H[Static site and RSS<br/>on GitHub Pages]
@@ -41,7 +41,11 @@ flowchart LR
 1. **Normal traffic** is the median of the page's previous 28 days. The median ignores the odd extreme day, unlike the mean.
 2. **A spike** needs at least 2,000 views, at least 3 times the usual level, and a robust z-score of at least 5, where `z = (views − median) / (1.4826 · MAD)` and MAD is the median absolute deviation. Spikes are ranked by views above normal.
 3. **Two passes keep the API load small.** Screening uses only the stored daily top lists. A page missing from a day's list had fewer views than that list's cutoff, so the cutoff is used as a right-censored upper bound. The baseline can then only be overestimated, which means screening never inflates a spike. Only the 40 strongest candidates get their exact history. That is about 45 requests a day instead of about 1,000.
-4. **Bot filter.** Automated traffic that slips past Wikimedia's own filter is overwhelmingly desktop, while real interest from Türkiye is mostly mobile. Spikes with less than 20% mobile views are listed separately as suspected bots.
+4. **Automated-traffic filter.** Some bot traffic slips past Wikimedia's own filter. Two signs give it away:
+   - *Desktop share.* Leaked bot traffic is overwhelmingly desktop, while real interest from Türkiye is mostly mobile. Spikes with less than 20% mobile views are set aside.
+   - *Lockstep.* People don't spread themselves evenly over unrelated pages. When four or more pages gain the same number of extra views on the same day, to within 3%, one automated source is hitting them all. On 6 November 2026, for example, Tarih, Coğrafya, Sanat, Bilim, Teknoloji and İstanbul each gained about 5,900 views; the lockstep check removes that group.
+
+   Removed pages are still listed at the bottom of each day.
 5. Pages that are not articles (main page, search, categories) and adult content are left out.
 
 **Schedule.** The workflow runs four times a day (00:37, 06:37, 12:37 and 18:37 UTC). The first run after Wikimedia publishes yesterday's data does the work and commits it; later runs see the day is done and stop. Missed days are caught up automatically.
