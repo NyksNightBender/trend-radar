@@ -163,7 +163,6 @@ async def analyse_day(
                 "mobile_share": None if share is None else round(share, 2),
                 "description": description,
                 "extract": summary.extract if summary else None,
-                "thumbnail": summary.thumbnail if summary else None,
                 "history": {
                     "start": (day - timedelta(days=settings.history_days - 1)).isoformat(),
                     "views": series,

@@ -75,6 +75,11 @@ def sparkline(values: list[int | None], usual: float, width: int = 150, height: 
     )
 
 
+def hue(text: str) -> int:
+    """A stable colour for a page's initial, so the list is not a wall of grey boxes."""
+    return sum(ord(c) * (i + 1) for i, c in enumerate(text)) % 360
+
+
 def heat(r: float) -> str:
     return "hot" if r >= 20 else "warm" if r >= 8 else "mild"
 
@@ -93,6 +98,7 @@ def environment() -> Environment:
         ratio=ratio,
         sparkline=sparkline,
         heat=heat,
+        hue=hue,
     )
     env.globals.update(repo_url=REPO_URL, site_url=SITE_URL)
     return env

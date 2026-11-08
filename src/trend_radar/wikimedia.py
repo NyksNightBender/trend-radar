@@ -21,7 +21,6 @@ class Summary:
     title: str
     description: str | None
     extract: str | None
-    thumbnail: str | None
 
 
 class ApiError(RuntimeError):
@@ -67,13 +66,11 @@ def parse_summaries(requested: Iterable[str], payload: Any) -> dict[str, Summary
         page = pages.get(name)
         if page is None:
             continue
-        thumb = page.get("thumbnail") or {}
         extract = (page.get("extract") or "").strip() or None
         result[title] = Summary(
             title=str(page["title"]),
             description=page.get("description"),
             extract=extract,
-            thumbnail=thumb.get("source"),
         )
     return result
 
@@ -153,7 +150,8 @@ class Wikimedia:
         return {} if payload is None else parse_daily(payload)
 
     async def summaries(self, titles: list[str]) -> dict[str, Summary]:
-        """Short description, two-sentence intro and thumbnail, 20 titles per request."""
+        """Short description and two-sentence intro, 20 titles per request. No images: most
+        spikes are about people, and the site does not republish their photos."""
         out: dict[str, Summary] = {}
         for i in range(0, len(titles), 20):
             batch = titles[i : i + 20]
@@ -162,14 +160,11 @@ class Wikimedia:
                 "format": "json",
                 "formatversion": "2",
                 "redirects": "1",
-                "prop": "extracts|pageimages|description",
+                "prop": "extracts|description",
                 "exintro": "1",
                 "explaintext": "1",
                 "exsentences": "2",
                 "exlimit": "20",
-                "piprop": "thumbnail",
-                "pithumbsize": "320",
-                "pilimit": "20",
                 "titles": "|".join(display(t) for t in batch),
             }
             payload = await self._get(ACTION_API, params)

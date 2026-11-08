@@ -70,7 +70,6 @@ class FakeApi:
                 title=t.replace("_", " "),
                 description="pornografik film oyuncusu" if t == "Hassas_Madde" else "Örnek madde",
                 extract=f"{t.replace('_', ' ')} hakkında kısa bir özet.",
-                thumbnail=None,
             )
             for t in titles
         }

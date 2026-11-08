@@ -24,11 +24,7 @@
 {% for s in day.spikes %}
   <li class="spike {{ s.ratio|heat }}">
     <span class="rank">{{ s.rank }}</span>
-    {% if s.thumbnail %}
-    <img class="thumb" src="{{ s.thumbnail }}" alt="" loading="lazy" decoding="async">
-    {% else %}
-    <span class="thumb thumb-empty" aria-hidden="true">{{ s.title[:1] }}</span>
-    {% endif %}
+    <span class="avatar" style="--h: {{ s.title|hue }}" aria-hidden="true">{{ s.title[:1] }}</span>
     <div class="body">
       <h2><a href="{{ s.url }}">{{ s.title }}</a></h2>
       {% if s.description %}<p class="desc">{{ s.description }}</p>{% endif %}

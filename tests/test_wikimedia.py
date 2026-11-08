@@ -55,11 +55,6 @@ SUMMARIES = {
                 "ns": 0,
                 "title": "Mustafa Kemal Atatürk",
                 "extract": "Türk asker ve devlet adamı.",
-                "thumbnail": {
-                    "source": "https://upload.wikimedia.org/a.jpg",
-                    "width": 320,
-                    "height": 400,
-                },
                 "description": "Türkiye Cumhuriyeti'nin kurucusu",
             },
             {"pageid": 2, "ns": 0, "title": "Ege Üniversitesi", "extract": ""},
@@ -83,7 +78,7 @@ def test_parse_daily() -> None:
 def test_parse_summaries_follows_redirects() -> None:
     found = parse_summaries(["Ataturk", "Ege_Üniversitesi", "Olmayan_Sayfa"], SUMMARIES)
     assert found["Ataturk"].title == "Mustafa Kemal Atatürk"
-    assert found["Ataturk"].thumbnail == "https://upload.wikimedia.org/a.jpg"
+    assert found["Ataturk"].description == "Türkiye Cumhuriyeti'nin kurucusu"
     assert found["Ege_Üniversitesi"].extract is None
     assert "Olmayan_Sayfa" not in found
 
