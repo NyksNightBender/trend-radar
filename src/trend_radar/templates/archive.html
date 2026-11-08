@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Arşiv · Merak Radarı{% endblock %}
+{% block main %}
+<section class="intro">
+  <p class="kicker">Arşiv</p>
+  <h1>Tüm günler</h1>
+  <p class="summary">{{ count }} günün sıçramaları, en yeniden en eskiye.</p>
+</section>
+{% for month, days in months.items() %}
+<section class="month">
+  <h2>{{ month }}</h2>
+  <ul class="archive">
+  {% for d in days %}
+    <li>
+      <a href="{{ root }}gun/{{ d.date }}.html">{{ d.date|tr_date(true) }}</a>
+      <span>{% for s in d.spikes[:3] %}{{ s.title }}{% if not loop.last %} · {% endif %}{% else %}sıçrama yok{% endfor %}</span>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+{% endblock %}

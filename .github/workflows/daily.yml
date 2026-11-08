@@ -1,0 +1,92 @@
+name: Daily radar
+
+# Four slots spread over the UTC day. GitHub can start scheduled runs hours late or skip
+# them, so whichever run first finds yesterday's data published does the work; later runs
+# see the file already exists and stop. Days are UTC days, like the contribution graph.
+on:
+  schedule:
+    - cron: "37 0 * * *"
+    - cron: "37 6 * * *"
+    - cron: "37 12 * * *"
+    - cron: "37 18 * * *"
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Also analyse this many past days"
+        required: false
+        default: "0"
+  push:
+    branches: [main]
+    paths: ["src/**", "pyproject.toml", "uv.lock", ".github/workflows/daily.yml"]
+
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    outputs:
+      publish: ${{ steps.decide.outputs.publish }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10
+      - run: uv sync --locked --no-dev
+
+      - name: Analyse yesterday and any missed days
+        id: fetch
+        if: github.event_name != 'push'
+        run: uv run --no-dev trend-radar fetch --backfill "${{ inputs.backfill || 0 }}"
+
+      - name: Commit new data
+        if: steps.fetch.outputs.new_days != '' && steps.fetch.outputs.new_days != '0'
+        env:
+          DATES: ${{ steps.fetch.outputs.dates }}
+        run: |
+          uv run --no-dev trend-radar readme
+          first="${DATES%% *}"; last="${DATES##* }"
+          if [ "$first" = "$last" ]; then msg="data: Turkish Wikipedia spikes for $first"
+          else msg="data: Turkish Wikipedia spikes for $first to $last"; fi
+          git config user.name "Ege Çelik"
+          git config user.email "213240166+NyksNightBender@users.noreply.github.com"
+          git add data README.md
+          git commit -m "$msg"
+          git push
+
+      - name: Decide whether to republish the site
+        id: decide
+        env:
+          EVENT: ${{ github.event_name }}
+          NEW: ${{ steps.fetch.outputs.new_days }}
+        run: |
+          if [ "$EVENT" != "schedule" ] || { [ -n "$NEW" ] && [ "$NEW" != "0" ]; }; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  pages:
+    needs: radar
+    if: needs.radar.outputs.publish == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main # includes the data commit made by the radar job
+      - uses: astral-sh/setup-uv@v10
+      - run: uv sync --locked --no-dev
+      - run: uv run --no-dev trend-radar site --out _site
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v5

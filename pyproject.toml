@@ -1,0 +1,45 @@
+[project]
+name = "trend-radar"
+version = "1.0.0"
+description = "Daily anomaly detection on Turkish Wikipedia pageviews: what did Türkiye suddenly look up yesterday?"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{ name = "Ege Çelik" }]
+dependencies = [
+    "httpx>=0.28",
+    "jinja2>=3.1",
+]
+
+[project.scripts]
+trend-radar = "trend_radar.cli:main"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.13",
+    "pytest>=8.3",
+    "ruff>=0.8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/trend_radar"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+# Turkish text legitimately uses dotless ı and dotted İ.
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.mypy]
+strict = true
+files = ["src", "tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

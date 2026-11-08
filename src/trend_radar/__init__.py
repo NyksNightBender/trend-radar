@@ -1,0 +1,1 @@
+"""Türkiye Trend Radar."""

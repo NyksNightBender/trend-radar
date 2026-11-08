@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}{% if day and not is_index %}{{ day.date|tr_date }} · {% endif %}Merak Radarı{% endblock %}
+{% block main %}
+{% if not day %}
+<section class="intro">
+  <p class="kicker">Türkiye dün Vikipedi'de neyi birden merak etti?</p>
+  <h1>Henüz veri yok</h1>
+  <p class="summary">İlk günlük çalışma bu sayfayı birazdan dolduracak.</p>
+</section>
+{% else %}
+<section class="intro">
+  <p class="kicker">{% if is_index %}Türkiye dün Vikipedi'de neyi birden merak etti?{% else %}Merak Radarı{% endif %}</p>
+  <h1>{{ day.date|tr_date(true) }}</h1>
+  <p class="summary">Türkçe Vikipedi'de en çok okunan {{ day.stats.pages|tr_int }} sayfa tarandı. <strong>{{ day.stats.spikes }} sayfa</strong> kendi normalinin birkaç katına fırladı.</p>
+  <nav class="day-nav" aria-label="Günler">
+    {% if prev_day %}<a href="{{ root }}gun/{{ prev_day }}.html">← {{ prev_day|tr_short }}</a>{% else %}<span></span>{% endif %}
+    <a href="{{ root }}arsiv.html">Tüm günler</a>
+    {% if next_day %}<a href="{{ root }}gun/{{ next_day }}.html">{{ next_day|tr_short }} →</a>{% else %}<span></span>{% endif %}
+  </nav>
+</section>
+
+{% if day.spikes %}
+<ol class="spikes">
+{% for s in day.spikes %}
+  <li class="spike {{ s.ratio|heat }}">
+    <span class="rank">{{ s.rank }}</span>
+    {% if s.thumbnail %}
+    <img class="thumb" src="{{ s.thumbnail }}" alt="" loading="lazy" decoding="async">
+    {% else %}
+    <span class="thumb thumb-empty" aria-hidden="true">{{ s.title[:1] }}</span>
+    {% endif %}
+    <div class="body">
+      <h2><a href="{{ s.url }}">{{ s.title }}</a></h2>
+      {% if s.description %}<p class="desc">{{ s.description }}</p>{% endif %}
+      {% if s.extract %}<p class="extract">{{ s.extract }}</p>{% endif %}
+      <p class="metrics">
+        <strong>{{ s.views|tr_int }}</strong> görüntülenme
+        <span class="sep">·</span> normalde ~{{ s.usual|tr_int }}/gün
+        <span class="badge" title="Normalin kaç katı">{{ s.ratio|ratio }}</span>
+        {% if s.approximate %}<span class="approx" title="Tam geçmiş alınamadı, değerler yaklaşık">yaklaşık</span>{% endif %}
+      </p>
+    </div>
+    <figure class="chart">
+      {{ s.history.views|sparkline(s.usual) }}
+      <figcaption>son {{ s.history.views|length }} gün</figcaption>
+    </figure>
+  </li>
+{% endfor %}
+</ol>
+{% else %}
+<p class="empty">Bu gün hiçbir sayfa normalinin belirgin şekilde üstüne çıkmadı.</p>
+{% endif %}
+
+{% if day.bots %}
+<details class="bots">
+  <summary>Bot trafiği şüphesiyle elenen {{ day.bots|length }} sayfa</summary>
+  <ul>
+  {% for b in day.bots %}
+    <li>{{ b.title }} <span>{{ b.views|tr_int }} görüntülenme, mobil payı %{{ (b.mobile_share * 100)|round|int }}</span></li>
+  {% endfor %}
+  </ul>
+  <p>Türkiye'den gelen gerçek ilgi büyük ölçüde mobilden gelir. Görüntülenmelerinin %80'inden fazlası masaüstünden gelen sıçramalar otomatik trafik sayılıp listeye alınmaz.</p>
+</details>
+{% endif %}
+
+{% if week %}
+<section class="week">
+  <h2>Son 7 günün en büyük sıçramaları</h2>
+  <ol>
+  {% for s in week %}
+    <li><a href="{{ s.url }}">{{ s.title }}</a><span>{{ s.date|tr_short }} · {{ s.views|tr_int }} · {{ s.ratio|ratio }}</span></li>
+  {% endfor %}
+  </ol>
+</section>
+{% endif %}
+{% endif %}
+{% endblock %}
