@@ -31,7 +31,7 @@
       {% if s.extract %}<p class="extract">{{ s.extract }}</p>{% endif %}
       <p class="metrics">
         <strong>{{ s.views|tr_int }}</strong> görüntülenme
-        <span class="sep">·</span> normalde ~{{ s.usual|tr_int }}/gün
+        <span class="sep">·</span> {% if s.usual < 5 %}normalde neredeyse hiç okunmuyor{% else %}normalde ~{{ s.usual|tr_int }}/gün{% endif %}
         <span class="badge" title="Normalin kaç katı">{{ s.ratio|ratio }}</span>
         {% if s.approximate %}<span class="approx" title="Tam geçmiş alınamadı, değerler yaklaşık">yaklaşık</span>{% endif %}
       </p>

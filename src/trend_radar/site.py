@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import shutil
 from datetime import UTC, date, datetime, time
@@ -126,6 +127,8 @@ def build(store: Store, out: Path) -> int:
     static = files("trend_radar") / "static"
     for name in ("style.css", "favicon.svg"):
         (out / name).write_bytes((static / name).read_bytes())
+    # GitHub Pages caches assets for ten minutes; a content hash in the URL avoids stale CSS.
+    env.globals["asset_version"] = hashlib.sha1((static / "style.css").read_bytes()).hexdigest()[:8]
 
     day_tpl = env.get_template("day.html")
     pages = 0
