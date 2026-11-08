@@ -14,9 +14,9 @@
 | ---: | --- | ---: | ---: | ---: |
 | 1 | [Fatma Betül Sayan Kaya](https://tr.wikipedia.org/wiki/Fatma_Bet%C3%BCl_Sayan_Kaya) · Türk siyasetçi | 69,331 | ~1,602 | 43.3× |
 | 2 | [Emre Belözoğlu](https://tr.wikipedia.org/wiki/Emre_Bel%C3%B6zo%C4%9Flu) · Türk futbolcu ve teknik direktör | 7,525 | ~224 | 33.7× |
-| 3 | [Teknoloji](https://tr.wikipedia.org/wiki/Teknoloji) · mal veya hizmetlerin üretiminde veya buna yönelik amaçların gerçekleştirilmesinde kullanılan beceriler, yöntemler, işlemler, tekniklerin derlenmesi veya bilimsel araştırmalardır | 6,418 | ~476 | 13.5× |
-| 4 | [İstanbul](https://tr.wikipedia.org/wiki/%C4%B0stanbul) · Türkiye'nin ve Avrupa'nın en kalabalık şehri | 7,270 | ~1,334 | 5.5× |
-| 5 | [Tarih](https://tr.wikipedia.org/wiki/Tarih) · geçmiş zamanın incelenmesi bilimi | 6,437 | ~508 | 12.7× |
+| 3 | [2027 UEFA ülkeler sıralaması](https://tr.wikipedia.org/wiki/2027_UEFA_%C3%BClkeler_s%C4%B1ralamas%C4%B1) | 6,139 | ~821 | 7.5× |
+| 4 | [Mariana Çukuru](https://tr.wikipedia.org/wiki/Mariana_%C3%87ukuru) · Dünya'nın bilinen en derin noktası | 4,765 | ~178 | 26.8× |
+| 5 | [Serhat Öztaşdelen](https://tr.wikipedia.org/wiki/Serhat_%C3%96zta%C5%9Fdelen) · Türk futbolcu | 2,258 | ~6 | 45.2× |
 <!-- TODAY:END -->
 
 ## Why
