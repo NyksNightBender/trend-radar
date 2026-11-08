@@ -72,4 +72,4 @@ Python 3.13, [uv](https://docs.astral.sh/uv/), httpx and Jinja2. The tests run t
 
 ## Credits
 
-Pageview data: Wikimedia Foundation, CC0. Summaries and images: Wikipedia contributors, CC BY-SA 4.0. Code: MIT.
+Pageview data: Wikimedia Foundation, CC0. Article summaries: Wikipedia contributors, CC BY-SA 4.0. Code: MIT.
