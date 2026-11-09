@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 6 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 8 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [Fatma Betül Sayan Kaya](https://tr.wikipedia.org/wiki/Fatma_Bet%C3%BCl_Sayan_Kaya) · Türk siyasetçi | 69,331 | ~1,602 | 43.3× |
-| 2 | [Emre Belözoğlu](https://tr.wikipedia.org/wiki/Emre_Bel%C3%B6zo%C4%9Flu) · Türk futbolcu ve teknik direktör | 7,525 | ~224 | 33.7× |
-| 3 | [2027 UEFA ülkeler sıralaması](https://tr.wikipedia.org/wiki/2027_UEFA_%C3%BClkeler_s%C4%B1ralamas%C4%B1) | 6,139 | ~821 | 7.5× |
-| 4 | [Mariana Çukuru](https://tr.wikipedia.org/wiki/Mariana_%C3%87ukuru) · Dünya'nın bilinen en derin noktası | 4,765 | ~178 | 26.8× |
-| 5 | [Serhat Öztaşdelen](https://tr.wikipedia.org/wiki/Serhat_%C3%96zta%C5%9Fdelen) · Türk futbolcu | 2,258 | ~6 | 45.2× |
+| 1 | [Cevad Prekazi](https://tr.wikipedia.org/wiki/Cevad_Prekazi) · Kosovalı futbolcu | 22,734 | ~43 | 454.7× |
+| 2 | [Türkiye cumhurbaşkanları listesi](https://tr.wikipedia.org/wiki/T%C3%BCrkiye_cumhurba%C5%9Fkanlar%C4%B1_listesi) · Vikimedya liste maddesi | 15,514 | ~589 | 26.3× |
+| 3 | [Fatma Betül Sayan Kaya](https://tr.wikipedia.org/wiki/Fatma_Bet%C3%BCl_Sayan_Kaya) · Türk siyasetçi | 9,042 | ~1,602 | 5.6× |
+| 4 | [Dia Saba](https://tr.wikipedia.org/wiki/Dia_Saba) · Arap-İsrailli Amedspor FK futbolcusu | 6,662 | ~280 | 23.8× |
+| 5 | [Emre Belözoğlu](https://tr.wikipedia.org/wiki/Emre_Bel%C3%B6zo%C4%9Flu) · Türk futbolcu ve teknik direktör | 6,563 | ~224 | 29.4× |
 <!-- TODAY:END -->
 
 ## Why
