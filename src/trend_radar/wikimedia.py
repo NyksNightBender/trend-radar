@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import asyncio
-from collections.abc import Iterable
+from collections.abc import Iterable, Sequence
 from dataclasses import dataclass
 from datetime import date, datetime
 from typing import Any
@@ -28,6 +28,24 @@ class ApiError(RuntimeError):
 
 
 # ---------- parsing (pure functions, tested with fixtures) ----------
+
+PLATFORMS = ("desktop", "mobile-web", "mobile-app")
+
+
+def combine_top_lists(day: date, parts: Sequence[TopList | None]) -> TopList | None:
+    """Sums per-platform top lists into one. Needs the mobile-web list, which carries most of
+    Turkish Wikipedia's traffic; a page missing from a platform's list counts 0 there, so the
+    result slightly undercounts, and final scores use exact per-article views anyway."""
+    by_platform = dict(zip(PLATFORMS, parts, strict=True))
+    if by_platform.get("mobile-web") is None:
+        return None
+    views: dict[str, int] = {}
+    for part in parts:
+        if part is not None:
+            for article, count in part.views.items():
+                views[article] = views.get(article, 0) + count
+    ranked = sorted(views.items(), key=lambda kv: (-kv[1], kv[0]))[:1000]
+    return TopList(day=day, views=dict(ranked), rebuilt=True)
 
 
 def parse_top(day: date, payload: Any) -> TopList:
@@ -134,10 +152,19 @@ class Wikimedia:
         return None
 
     async def top(self, day: date, access: str = "all-access") -> TopList | None:
-        """The day's 1000 most viewed pages (human traffic), or None if not published yet."""
+        """The day's 1000 most viewed pages (human traffic), or None if not published yet.
+
+        Wikimedia sometimes never publishes the combined list for a day whose per-platform
+        lists exist (2026-10-31 is one), so the combined list is rebuilt from those.
+        """
         url = f"{PAGEVIEWS_API}/top/{PROJECT}/{access}/{day:%Y/%m/%d}"
         payload = await self._get(url, not_found_tries=3)
-        return None if payload is None else parse_top(day, payload)
+        if payload is not None:
+            return parse_top(day, payload)
+        if access != "all-access":
+            return None
+        parts = await asyncio.gather(*(self.top(day, a) for a in PLATFORMS))
+        return combine_top_lists(day, parts)
 
     async def daily(self, article: str, start: date, end: date) -> dict[date, int]:
         """Daily human views of one article, all platforms. Days without data are omitted."""

@@ -24,6 +24,7 @@ from .config import Settings
 class TopList:
     day: date
     views: dict[str, int] = field(default_factory=dict)  # article -> views, at most 1000 rows
+    rebuilt: bool = False  # summed from the per-platform lists (see Wikimedia.top)
 
     @property
     def cutoff(self) -> int:

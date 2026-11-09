@@ -55,3 +55,19 @@ def test_unpublished_day_is_retried_later(tmp_path: Path) -> None:
     written = asyncio.run(run(store, api, Settings(), today=DAY + timedelta(days=1)))
     assert DAY not in written
     assert DAY in target_days(store, DAY + timedelta(days=1))
+
+
+class FlakyApi(FakeApi):
+    """Fails while analysing one day, as a network error or bad response would."""
+
+    async def top(self, day, access="all-access"):  # type: ignore[no-untyped-def]
+        if access == "desktop" and day == DAY - timedelta(days=1):
+            raise RuntimeError("connection reset")
+        return await super().top(day, access)
+
+
+def test_one_failing_day_does_not_block_the_others(tmp_path: Path) -> None:
+    store = Store(tmp_path / "data")
+    written = asyncio.run(run(store, FlakyApi(), Settings(), today=DAY + timedelta(days=1)))
+    assert DAY in written and DAY - timedelta(days=1) not in written
+    assert DAY - timedelta(days=1) in target_days(store, DAY + timedelta(days=1))  # retried later

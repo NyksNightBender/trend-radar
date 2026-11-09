@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+import os
 from collections.abc import Iterable
 from datetime import UTC, date, datetime, timedelta
 from typing import Any, Protocol
@@ -31,6 +32,14 @@ class PageviewSource(Protocol):
     async def summaries(self, titles: list[str]) -> dict[str, Summary]: ...
 
 
+def annotate(level: str, title: str, message: str) -> None:
+    """Prints a line, and on GitHub Actions shows it on the run page as well."""
+    if os.environ.get("GITHUB_ACTIONS"):
+        print(f"::{level} title={title}::{message}")
+    else:
+        print(f"{title}: {message}")
+
+
 def utc_today() -> date:
     return datetime.now(UTC).date()
 
@@ -56,9 +65,11 @@ async def ensure_top_lists(
             missing.append(day)
         else:
             tops[day] = stored
-    fetched = await asyncio.gather(*(api.top(day) for day in missing))
+    fetched = await asyncio.gather(*(api.top(day) for day in missing), return_exceptions=True)
     for day, top in zip(missing, fetched, strict=True):
-        if top is not None:
+        if isinstance(top, BaseException):
+            annotate("warning", f"Top list for {day} failed", repr(top))
+        elif top is not None:
             store.save_top(top)
             tops[day] = top
     return tops
@@ -180,6 +191,7 @@ async def analyse_day(
             "pages": len(top.views),
             "articles": len(articles),
             "cutoff": top.cutoff,
+            "rebuilt_list": top.rebuilt,
             "candidates": len(candidates),
             "spikes": len(spikes),
             "bots": len(bots),
@@ -202,14 +214,19 @@ async def run(
     written: list[date] = []
     for day in targets:
         if day not in tops:
-            print(f"{day}: not published by Wikimedia yet")
+            annotate("notice", "Not published yet", f"Wikimedia has no top list for {day} yet")
             continue
-        result = await analyse_day(day, tops, api, settings)
+        try:  # one bad day must not stop the others from being saved
+            result = await analyse_day(day, tops, api, settings)
+        except Exception as exc:
+            annotate("warning", f"Analysis of {day} failed", repr(exc))
+            continue
         store.save_day(day, result)
         stats = result["stats"]
         print(
             f"{day}: {stats['articles']} articles, {stats['candidates']} candidates, "
             f"{stats['spikes']} spikes, {stats['bots']} suspected bots"
+            + (" (list rebuilt from platform lists)" if stats["rebuilt_list"] else "")
         )
         written.append(day)
     return written
