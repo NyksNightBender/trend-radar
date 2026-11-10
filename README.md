@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 8 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 9 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [Cevad Prekazi](https://tr.wikipedia.org/wiki/Cevad_Prekazi) · Kosovalı futbolcu | 22,734 | ~43 | 454.7× |
-| 2 | [Türkiye cumhurbaşkanları listesi](https://tr.wikipedia.org/wiki/T%C3%BCrkiye_cumhurba%C5%9Fkanlar%C4%B1_listesi) · Vikimedya liste maddesi | 15,514 | ~589 | 26.3× |
-| 3 | [Fatma Betül Sayan Kaya](https://tr.wikipedia.org/wiki/Fatma_Bet%C3%BCl_Sayan_Kaya) · Türk siyasetçi | 9,042 | ~1,602 | 5.6× |
-| 4 | [Dia Saba](https://tr.wikipedia.org/wiki/Dia_Saba) · Arap-İsrailli Amedspor FK futbolcusu | 6,662 | ~280 | 23.8× |
-| 5 | [Emre Belözoğlu](https://tr.wikipedia.org/wiki/Emre_Bel%C3%B6zo%C4%9Flu) · Türk futbolcu ve teknik direktör | 6,563 | ~224 | 29.4× |
+| 1 | [Cevad Prekazi](https://tr.wikipedia.org/wiki/Cevad_Prekazi) · Kosovalı futbolcu | 62,060 | ~44 | 1241.2× |
+| 2 | [Fatma Betül Sayan Kaya](https://tr.wikipedia.org/wiki/Fatma_Bet%C3%BCl_Sayan_Kaya) · Türk siyasetçi | 13,928 | ~1,602 | 8.7× |
+| 3 | [Yol Ayrımı (film)](https://tr.wikipedia.org/wiki/Yol_Ayr%C4%B1m%C4%B1_%28film%29) · 2017 yapımı Yavuz Turgul filmi | 11,912 | ~42 | 238.2× |
+| 4 | [Mehmet Rüştü Başaran](https://tr.wikipedia.org/wiki/Mehmet_R%C3%BC%C5%9Ft%C3%BC_Ba%C5%9Faran) | 8,123 | ~37 | 162.5× |
+| 5 | [Mustafa Kemal Atatürk](https://tr.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk) · Türkiye Cumhuriyeti'nin kurucusu ve ilk cumhurbaşkanı | 8,965 | ~2,112 | 4.2× |
 <!-- TODAY:END -->
 
 ## Why
