@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 9 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 10 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [Cevad Prekazi](https://tr.wikipedia.org/wiki/Cevad_Prekazi) · Kosovalı futbolcu | 62,060 | ~44 | 1241.2× |
-| 2 | [Fatma Betül Sayan Kaya](https://tr.wikipedia.org/wiki/Fatma_Bet%C3%BCl_Sayan_Kaya) · Türk siyasetçi | 13,928 | ~1,602 | 8.7× |
-| 3 | [Yol Ayrımı (film)](https://tr.wikipedia.org/wiki/Yol_Ayr%C4%B1m%C4%B1_%28film%29) · 2017 yapımı Yavuz Turgul filmi | 11,912 | ~42 | 238.2× |
-| 4 | [Mehmet Rüştü Başaran](https://tr.wikipedia.org/wiki/Mehmet_R%C3%BC%C5%9Ft%C3%BC_Ba%C5%9Faran) | 8,123 | ~37 | 162.5× |
-| 5 | [Mustafa Kemal Atatürk](https://tr.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk) · Türkiye Cumhuriyeti'nin kurucusu ve ilk cumhurbaşkanı | 8,965 | ~2,112 | 4.2× |
+| 1 | [İstanbul](https://tr.wikipedia.org/wiki/%C4%B0stanbul) · Türkiye'nin ve Avrupa'nın en kalabalık şehri | 24,936 | ~2,262 | 11× |
+| 2 | [Türkiye](https://tr.wikipedia.org/wiki/T%C3%BCrkiye) · Batı Asya ve Güneydoğu Avrupa'da bir ülke | 27,263 | ~4,636 | 5.9× |
+| 3 | [Mustafa Kemal Atatürk](https://tr.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk) · Türkiye Cumhuriyeti'nin kurucusu ve ilk cumhurbaşkanı | 15,979 | ~2,190 | 7.3× |
+| 4 | [Haluk Bilginer](https://tr.wikipedia.org/wiki/Haluk_Bilginer) · Türk oyuncu | 11,062 | ~358 | 30.9× |
+| 5 | [Cevad Prekazi](https://tr.wikipedia.org/wiki/Cevad_Prekazi) · Kosovalı futbolcu | 10,329 | ~44 | 206.6× |
 <!-- TODAY:END -->
 
 ## Why
