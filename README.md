@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 10 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 11 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [İstanbul](https://tr.wikipedia.org/wiki/%C4%B0stanbul) · Türkiye'nin ve Avrupa'nın en kalabalık şehri | 24,936 | ~2,262 | 11× |
-| 2 | [Türkiye](https://tr.wikipedia.org/wiki/T%C3%BCrkiye) · Batı Asya ve Güneydoğu Avrupa'da bir ülke | 27,263 | ~4,636 | 5.9× |
-| 3 | [Mustafa Kemal Atatürk](https://tr.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk) · Türkiye Cumhuriyeti'nin kurucusu ve ilk cumhurbaşkanı | 15,979 | ~2,190 | 7.3× |
-| 4 | [Haluk Bilginer](https://tr.wikipedia.org/wiki/Haluk_Bilginer) · Türk oyuncu | 11,062 | ~358 | 30.9× |
-| 5 | [Cevad Prekazi](https://tr.wikipedia.org/wiki/Cevad_Prekazi) · Kosovalı futbolcu | 10,329 | ~44 | 206.6× |
+| 1 | [Türkiye](https://tr.wikipedia.org/wiki/T%C3%BCrkiye) · Batı Asya ve Güneydoğu Avrupa'da bir ülke | 29,122 | ~4,798 | 6.1× |
+| 2 | [İstanbul](https://tr.wikipedia.org/wiki/%C4%B0stanbul) · Türkiye'nin ve Avrupa'nın en kalabalık şehri | 25,831 | ~2,358 | 11× |
+| 3 | [Palau](https://tr.wikipedia.org/wiki/Palau) · Büyük Okyanus'ta bir ada devleti | 14,122 | ~67 | 210.8× |
+| 4 | [Şahap Kavcıoğlu](https://tr.wikipedia.org/wiki/%C5%9Eahap_Kavc%C4%B1o%C4%9Flu) · Türk siyasetçi | 12,955 | ~120 | 107.5× |
+| 5 | [Haluk Bilginer](https://tr.wikipedia.org/wiki/Haluk_Bilginer) · Türk oyuncu | 9,331 | ~358 | 26.1× |
 <!-- TODAY:END -->
 
 ## Why
