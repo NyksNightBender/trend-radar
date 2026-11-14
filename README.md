@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 12 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 13 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [Türkiye](https://tr.wikipedia.org/wiki/T%C3%BCrkiye) · Batı Asya ve Güneydoğu Avrupa'da bir ülke | 31,188 | ~5,103 | 6.1× |
-| 2 | [İstanbul](https://tr.wikipedia.org/wiki/%C4%B0stanbul) · Türkiye'nin ve Avrupa'nın en kalabalık şehri | 27,900 | ~2,526 | 11× |
-| 3 | [Sikorsky S-70](https://tr.wikipedia.org/wiki/Sikorsky_S-70) · Genel maksat/taşıma helikopterleri ailesi | 14,734 | ~14 | 294.7× |
-| 4 | [Robert Enke](https://tr.wikipedia.org/wiki/Robert_Enke) · Alman futbolcu | 9,299 | ~12 | 186× |
-| 5 | [Cevad Prekazi](https://tr.wikipedia.org/wiki/Cevad_Prekazi) · Kosovalı futbolcu | 8,150 | ~45 | 163× |
+| 1 | [İstanbul](https://tr.wikipedia.org/wiki/%C4%B0stanbul) · Türkiye'nin ve Avrupa'nın en kalabalık şehri | 30,902 | ~2,794 | 11.1× |
+| 2 | [Türkiye](https://tr.wikipedia.org/wiki/T%C3%BCrkiye) · Batı Asya ve Güneydoğu Avrupa'da bir ülke | 33,128 | ~5,287 | 6.3× |
+| 3 | [Berkun Oya](https://tr.wikipedia.org/wiki/Berkun_Oya) · Türk tiyatro yazarı ve yönetmen | 10,896 | ~126 | 86.5× |
+| 4 | [Jensen Huang](https://tr.wikipedia.org/wiki/Jensen_Huang) · Tayvanlı ve Amerikalı iş insanı | 6,213 | ~58 | 106.2× |
+| 5 | [Mehmet Rüştü Başaran](https://tr.wikipedia.org/wiki/Mehmet_R%C3%BC%C5%9Ft%C3%BC_Ba%C5%9Faran) | 5,425 | ~37 | 108.5× |
 <!-- TODAY:END -->
 
 ## Why
