@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 13 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 14 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [İstanbul](https://tr.wikipedia.org/wiki/%C4%B0stanbul) · Türkiye'nin ve Avrupa'nın en kalabalık şehri | 30,902 | ~2,794 | 11.1× |
-| 2 | [Türkiye](https://tr.wikipedia.org/wiki/T%C3%BCrkiye) · Batı Asya ve Güneydoğu Avrupa'da bir ülke | 33,128 | ~5,287 | 6.3× |
-| 3 | [Berkun Oya](https://tr.wikipedia.org/wiki/Berkun_Oya) · Türk tiyatro yazarı ve yönetmen | 10,896 | ~126 | 86.5× |
-| 4 | [Jensen Huang](https://tr.wikipedia.org/wiki/Jensen_Huang) · Tayvanlı ve Amerikalı iş insanı | 6,213 | ~58 | 106.2× |
-| 5 | [Mehmet Rüştü Başaran](https://tr.wikipedia.org/wiki/Mehmet_R%C3%BC%C5%9Ft%C3%BC_Ba%C5%9Faran) | 5,425 | ~37 | 108.5× |
+| 1 | [Berkun Oya](https://tr.wikipedia.org/wiki/Berkun_Oya) · Türk tiyatro yazarı ve yönetmen | 14,271 | ~126 | 112.8× |
+| 2 | [Sadri Alışık](https://tr.wikipedia.org/wiki/Sadri_Al%C4%B1%C5%9F%C4%B1k) · Türk sinema sanatçısı (1925–1995) | 9,843 | ~226 | 43.6× |
+| 3 | [Ayhan Işık](https://tr.wikipedia.org/wiki/Ayhan_I%C5%9F%C4%B1k) · Türk sinema sanatçısı ve ressam (1929–1979) | 8,106 | ~130 | 62.4× |
+| 4 | [Bir Başkadır](https://tr.wikipedia.org/wiki/Bir_Ba%C5%9Fkad%C4%B1r) · Türk yapımı Netflix dizisi | 6,284 | ~125 | 50.3× |
+| 5 | [Funda Eryiğit](https://tr.wikipedia.org/wiki/Funda_Eryi%C4%9Fit) · Türk oyuncu | 4,393 | ~133 | 33× |
 <!-- TODAY:END -->
 
 ## Why
