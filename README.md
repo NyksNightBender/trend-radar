@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 14 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 15 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [Berkun Oya](https://tr.wikipedia.org/wiki/Berkun_Oya) · Türk tiyatro yazarı ve yönetmen | 14,271 | ~126 | 112.8× |
-| 2 | [Sadri Alışık](https://tr.wikipedia.org/wiki/Sadri_Al%C4%B1%C5%9F%C4%B1k) · Türk sinema sanatçısı (1925–1995) | 9,843 | ~226 | 43.6× |
-| 3 | [Ayhan Işık](https://tr.wikipedia.org/wiki/Ayhan_I%C5%9F%C4%B1k) · Türk sinema sanatçısı ve ressam (1929–1979) | 8,106 | ~130 | 62.4× |
-| 4 | [Bir Başkadır](https://tr.wikipedia.org/wiki/Bir_Ba%C5%9Fkad%C4%B1r) · Türk yapımı Netflix dizisi | 6,284 | ~125 | 50.3× |
-| 5 | [Funda Eryiğit](https://tr.wikipedia.org/wiki/Funda_Eryi%C4%9Fit) · Türk oyuncu | 4,393 | ~133 | 33× |
+| 1 | [Berke Özer](https://tr.wikipedia.org/wiki/Berke_%C3%96zer) · Türk futbolcu | 17,845 | ~104 | 170.8× |
+| 2 | [Berkun Oya](https://tr.wikipedia.org/wiki/Berkun_Oya) · Türk tiyatro yazarı ve yönetmen | 13,927 | ~134 | 103.9× |
+| 3 | [Haluk Bilginer](https://tr.wikipedia.org/wiki/Haluk_Bilginer) · Türk oyuncu | 6,710 | ~376 | 17.8× |
+| 4 | [Bir Başkadır](https://tr.wikipedia.org/wiki/Bir_Ba%C5%9Fkad%C4%B1r) · Türk yapımı Netflix dizisi | 6,079 | ~128 | 47.5× |
+| 5 | [Seyit Rıza](https://tr.wikipedia.org/wiki/Seyit_R%C4%B1za) · Zaza aşiret reisi | 5,652 | ~165 | 34.3× |
 <!-- TODAY:END -->
 
 ## Why
