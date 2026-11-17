@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 15 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 16 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [Berke Özer](https://tr.wikipedia.org/wiki/Berke_%C3%96zer) · Türk futbolcu | 17,845 | ~104 | 170.8× |
-| 2 | [Berkun Oya](https://tr.wikipedia.org/wiki/Berkun_Oya) · Türk tiyatro yazarı ve yönetmen | 13,927 | ~134 | 103.9× |
-| 3 | [Haluk Bilginer](https://tr.wikipedia.org/wiki/Haluk_Bilginer) · Türk oyuncu | 6,710 | ~376 | 17.8× |
-| 4 | [Bir Başkadır](https://tr.wikipedia.org/wiki/Bir_Ba%C5%9Fkad%C4%B1r) · Türk yapımı Netflix dizisi | 6,079 | ~128 | 47.5× |
-| 5 | [Seyit Rıza](https://tr.wikipedia.org/wiki/Seyit_R%C4%B1za) · Zaza aşiret reisi | 5,652 | ~165 | 34.3× |
+| 1 | [Berkun Oya](https://tr.wikipedia.org/wiki/Berkun_Oya) · Türk tiyatro yazarı ve yönetmen | 10,293 | ~144 | 71.5× |
+| 2 | [Çiğdem Karaaslan](https://tr.wikipedia.org/wiki/%C3%87i%C4%9Fdem_Karaaslan) · Türk politikacı | 9,883 | ~10 | 197.7× |
+| 3 | [Berke Özer](https://tr.wikipedia.org/wiki/Berke_%C3%96zer) · Türk futbolcu | 7,072 | ~104 | 67.7× |
+| 4 | [2026-27 UEFA Uluslar B Ligi](https://tr.wikipedia.org/wiki/2026-27_UEFA_Uluslar_B_Ligi) | 4,182 | ~6 | 83.6× |
+| 5 | [Bir Başkadır](https://tr.wikipedia.org/wiki/Bir_Ba%C5%9Fkad%C4%B1r) · Türk yapımı Netflix dizisi | 4,281 | ~132 | 32.4× |
 <!-- TODAY:END -->
 
 ## Why
