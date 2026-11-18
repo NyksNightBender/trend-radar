@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 16 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 17 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [Berkun Oya](https://tr.wikipedia.org/wiki/Berkun_Oya) · Türk tiyatro yazarı ve yönetmen | 10,293 | ~144 | 71.5× |
-| 2 | [Çiğdem Karaaslan](https://tr.wikipedia.org/wiki/%C3%87i%C4%9Fdem_Karaaslan) · Türk politikacı | 9,883 | ~10 | 197.7× |
-| 3 | [Berke Özer](https://tr.wikipedia.org/wiki/Berke_%C3%96zer) · Türk futbolcu | 7,072 | ~104 | 67.7× |
-| 4 | [2026-27 UEFA Uluslar B Ligi](https://tr.wikipedia.org/wiki/2026-27_UEFA_Uluslar_B_Ligi) | 4,182 | ~6 | 83.6× |
-| 5 | [Bir Başkadır](https://tr.wikipedia.org/wiki/Bir_Ba%C5%9Fkad%C4%B1r) · Türk yapımı Netflix dizisi | 4,281 | ~132 | 32.4× |
+| 1 | [Otlukbeli Muharebesi](https://tr.wikipedia.org/wiki/Otlukbeli_Muharebesi) · 1473 yılında II. Mehmed ile Uzun Hasan arasında gerçekleşen bir meydan muharebesi | 7,724 | ~533 | 14.5× |
+| 2 | [Berkun Oya](https://tr.wikipedia.org/wiki/Berkun_Oya) · Türk tiyatro yazarı ve yönetmen | 6,767 | ~154 | 44.1× |
+| 3 | [Uzun Hasan](https://tr.wikipedia.org/wiki/Uzun_Hasan) · Akkoyunlu hükümdarı | 6,755 | ~1,070 | 6.3× |
+| 4 | [2026-27 UEFA Uluslar B Ligi](https://tr.wikipedia.org/wiki/2026-27_UEFA_Uluslar_B_Ligi) | 5,303 | ~6 | 106.1× |
+| 5 | [Burak Akbay](https://tr.wikipedia.org/wiki/Burak_Akbay) · Türk iş insanı | 4,732 | ~50 | 94.6× |
 <!-- TODAY:END -->
 
 ## Why
