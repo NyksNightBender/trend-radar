@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 17 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 18 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [Otlukbeli Muharebesi](https://tr.wikipedia.org/wiki/Otlukbeli_Muharebesi) · 1473 yılında II. Mehmed ile Uzun Hasan arasında gerçekleşen bir meydan muharebesi | 7,724 | ~533 | 14.5× |
-| 2 | [Berkun Oya](https://tr.wikipedia.org/wiki/Berkun_Oya) · Türk tiyatro yazarı ve yönetmen | 6,767 | ~154 | 44.1× |
-| 3 | [Uzun Hasan](https://tr.wikipedia.org/wiki/Uzun_Hasan) · Akkoyunlu hükümdarı | 6,755 | ~1,070 | 6.3× |
-| 4 | [2026-27 UEFA Uluslar B Ligi](https://tr.wikipedia.org/wiki/2026-27_UEFA_Uluslar_B_Ligi) | 5,303 | ~6 | 106.1× |
-| 5 | [Burak Akbay](https://tr.wikipedia.org/wiki/Burak_Akbay) · Türk iş insanı | 4,732 | ~50 | 94.6× |
+| 1 | [Şahap Kavcıoğlu](https://tr.wikipedia.org/wiki/%C5%9Eahap_Kavc%C4%B1o%C4%9Flu) · Türk siyasetçi | 7,408 | ~232 | 31.9× |
+| 2 | [Hayati Yazıcı](https://tr.wikipedia.org/wiki/Hayati_Yaz%C4%B1c%C4%B1) · Türk politikacı | 5,396 | ~360 | 15× |
+| 3 | [Berkun Oya](https://tr.wikipedia.org/wiki/Berkun_Oya) · Türk tiyatro yazarı ve yönetmen | 5,150 | ~154 | 33.6× |
+| 4 | [Naim Süleymanoğlu](https://tr.wikipedia.org/wiki/Naim_S%C3%BCleymano%C4%9Flu) · Türk millî halterci (1967–2017) | 4,256 | ~320 | 13.3× |
+| 5 | [Grand Theft Auto VI](https://tr.wikipedia.org/wiki/Grand_Theft_Auto_VI) · Rockstar Games tarafından geliştirilen 2026 tarihli video oyunu | 3,990 | ~192 | 20.8× |
 <!-- TODAY:END -->
 
 ## Why
