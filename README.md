@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 19 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 20 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [Şahap Kavcıoğlu](https://tr.wikipedia.org/wiki/%C5%9Eahap_Kavc%C4%B1o%C4%9Flu) · Türk siyasetçi | 7,434 | ~298 | 24.9× |
-| 2 | [Büşra Özdemir](https://tr.wikipedia.org/wiki/B%C3%BC%C5%9Fra_%C3%96zdemir) · Antalya Büyükşehir Belediye Başkan Vekili | 5,899 | ~111 | 53.1× |
-| 3 | [Candan Yüceer](https://tr.wikipedia.org/wiki/Candan_Y%C3%BCceer) · Türk politikacı | 5,724 | ~36 | 114.5× |
-| 4 | [Uluslararası Erkekler Günü](https://tr.wikipedia.org/wiki/Uluslararas%C4%B1_Erkekler_G%C3%BCn%C3%BC) · yıllık uluslararası kutlama | 5,074 | ~14 | 101.5× |
-| 5 | [Grand Theft Auto VI](https://tr.wikipedia.org/wiki/Grand_Theft_Auto_VI) · Rockstar Games tarafından geliştirilen 2026 tarihli video oyunu | 4,805 | ~220 | 21.8× |
+| 1 | [Şahap Kavcıoğlu](https://tr.wikipedia.org/wiki/%C5%9Eahap_Kavc%C4%B1o%C4%9Flu) · Türk siyasetçi | 5,861 | ~382 | 15.4× |
+| 2 | [Kemalettin Aydın](https://tr.wikipedia.org/wiki/Kemalettin_Ayd%C4%B1n) | 5,321 | ~16 | 106.4× |
+| 3 | [Levent Alpöge](https://tr.wikipedia.org/wiki/Levent_Alp%C3%B6ge) | 4,318 | ~0 | 86.4× |
+| 4 | [Berkun Oya](https://tr.wikipedia.org/wiki/Berkun_Oya) · Türk tiyatro yazarı ve yönetmen | 3,931 | ~158 | 25× |
+| 5 | [Grand Theft Auto VI](https://tr.wikipedia.org/wiki/Grand_Theft_Auto_VI) · Rockstar Games tarafından geliştirilen 2026 tarihli video oyunu | 3,811 | ~242 | 15.7× |
 <!-- TODAY:END -->
 
 ## Why
