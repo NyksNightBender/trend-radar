@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 20 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 21 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [Şahap Kavcıoğlu](https://tr.wikipedia.org/wiki/%C5%9Eahap_Kavc%C4%B1o%C4%9Flu) · Türk siyasetçi | 5,861 | ~382 | 15.4× |
-| 2 | [Kemalettin Aydın](https://tr.wikipedia.org/wiki/Kemalettin_Ayd%C4%B1n) | 5,321 | ~16 | 106.4× |
-| 3 | [Levent Alpöge](https://tr.wikipedia.org/wiki/Levent_Alp%C3%B6ge) | 4,318 | ~0 | 86.4× |
-| 4 | [Berkun Oya](https://tr.wikipedia.org/wiki/Berkun_Oya) · Türk tiyatro yazarı ve yönetmen | 3,931 | ~158 | 25× |
-| 5 | [Grand Theft Auto VI](https://tr.wikipedia.org/wiki/Grand_Theft_Auto_VI) · Rockstar Games tarafından geliştirilen 2026 tarihli video oyunu | 3,811 | ~242 | 15.7× |
+| 1 | [Çığlık (tablo)](https://tr.wikipedia.org/wiki/%C3%87%C4%B1%C4%9Fl%C4%B1k_%28tablo%29) | 18,554 | ~63 | 294.5× |
+| 2 | [Türkiye cumhurbaşkanları listesi](https://tr.wikipedia.org/wiki/T%C3%BCrkiye_cumhurba%C5%9Fkanlar%C4%B1_listesi) · Vikimedya liste maddesi | 13,200 | ~677 | 19.5× |
+| 3 | [Levent Alpöge](https://tr.wikipedia.org/wiki/Levent_Alp%C3%B6ge) | 12,314 | ~0 | 246.3× |
+| 4 | [Recep Tayyip Erdoğan](https://tr.wikipedia.org/wiki/Recep_Tayyip_Erdo%C4%9Fan) · 12. Türkiye cumhurbaşkanı (2014–görevde) | 9,640 | ~1,930 | 5× |
+| 5 | [Celâl Bayar](https://tr.wikipedia.org/wiki/Cel%C3%A2l_Bayar) · 3. Türkiye cumhurbaşkanı (1950–1960) | 7,902 | ~466 | 16.9× |
 <!-- TODAY:END -->
 
 ## Why
