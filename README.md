@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 21 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 22 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [Çığlık (tablo)](https://tr.wikipedia.org/wiki/%C3%87%C4%B1%C4%9Fl%C4%B1k_%28tablo%29) | 18,554 | ~63 | 294.5× |
-| 2 | [Türkiye cumhurbaşkanları listesi](https://tr.wikipedia.org/wiki/T%C3%BCrkiye_cumhurba%C5%9Fkanlar%C4%B1_listesi) · Vikimedya liste maddesi | 13,200 | ~677 | 19.5× |
-| 3 | [Levent Alpöge](https://tr.wikipedia.org/wiki/Levent_Alp%C3%B6ge) | 12,314 | ~0 | 246.3× |
-| 4 | [Recep Tayyip Erdoğan](https://tr.wikipedia.org/wiki/Recep_Tayyip_Erdo%C4%9Fan) · 12. Türkiye cumhurbaşkanı (2014–görevde) | 9,640 | ~1,930 | 5× |
-| 5 | [Celâl Bayar](https://tr.wikipedia.org/wiki/Cel%C3%A2l_Bayar) · 3. Türkiye cumhurbaşkanı (1950–1960) | 7,902 | ~466 | 16.9× |
+| 1 | [Büşra Develi](https://tr.wikipedia.org/wiki/B%C3%BC%C5%9Fra_Develi) · Türk dizi ve sinema oyuncusu | 6,808 | ~80 | 85.1× |
+| 2 | [Levent Alpöge](https://tr.wikipedia.org/wiki/Levent_Alp%C3%B6ge) · Türk matematikçi | 6,447 | ~0 | 128.9× |
+| 3 | [Gülten Dayıoğlu](https://tr.wikipedia.org/wiki/G%C3%BClten_Day%C4%B1o%C4%9Flu) · Türk roman ve öykü yazarı | 5,400 | ~30 | 108× |
+| 4 | [Ömer Fahreddin Türkkan](https://tr.wikipedia.org/wiki/%C3%96mer_Fahreddin_T%C3%BCrkkan) · Türk asker ve diplomat (1868 – 1948) | 5,056 | ~324 | 15.6× |
+| 5 | [Mehmet Pişkin'in intiharı](https://tr.wikipedia.org/wiki/Mehmet_Pi%C5%9Fkin%27in_intihar%C4%B1) · 2014 yılında Türkiye'de yaşanan bir intihar vakası | 4,084 | ~117 | 34.9× |
 <!-- TODAY:END -->
 
 ## Why
