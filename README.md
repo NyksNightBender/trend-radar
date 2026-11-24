@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 22 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 23 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [Büşra Develi](https://tr.wikipedia.org/wiki/B%C3%BC%C5%9Fra_Develi) · Türk dizi ve sinema oyuncusu | 6,808 | ~80 | 85.1× |
-| 2 | [Levent Alpöge](https://tr.wikipedia.org/wiki/Levent_Alp%C3%B6ge) · Türk matematikçi | 6,447 | ~0 | 128.9× |
-| 3 | [Gülten Dayıoğlu](https://tr.wikipedia.org/wiki/G%C3%BClten_Day%C4%B1o%C4%9Flu) · Türk roman ve öykü yazarı | 5,400 | ~30 | 108× |
-| 4 | [Ömer Fahreddin Türkkan](https://tr.wikipedia.org/wiki/%C3%96mer_Fahreddin_T%C3%BCrkkan) · Türk asker ve diplomat (1868 – 1948) | 5,056 | ~324 | 15.6× |
-| 5 | [Mehmet Pişkin'in intiharı](https://tr.wikipedia.org/wiki/Mehmet_Pi%C5%9Fkin%27in_intihar%C4%B1) · 2014 yılında Türkiye'de yaşanan bir intihar vakası | 4,084 | ~117 | 34.9× |
+| 1 | [Levent Alpöge](https://tr.wikipedia.org/wiki/Levent_Alp%C3%B6ge) · Türk matematikçi | 4,131 | ~0 | 82.6× |
+| 2 | [Emre Mor](https://tr.wikipedia.org/wiki/Emre_Mor) · Türk futbolcu (d. 1997) | 3,867 | ~102 | 37.9× |
+| 3 | [Ahmet Uluçay](https://tr.wikipedia.org/wiki/Ahmet_Ulu%C3%A7ay) · Türk sinemacı | 3,479 | ~15 | 69.6× |
+| 4 | [Büşra Develi](https://tr.wikipedia.org/wiki/B%C3%BC%C5%9Fra_Develi) · Türk dizi ve sinema oyuncusu | 3,178 | ~80 | 39.7× |
+| 5 | [Ertuğrul Dursun Önkuzu](https://tr.wikipedia.org/wiki/Ertu%C4%9Frul_Dursun_%C3%96nkuzu) · İşkence ile öldürülen ülkücü öğrenci | 2,790 | ~32 | 55.8× |
 <!-- TODAY:END -->
 
 ## Why
