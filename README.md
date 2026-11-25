@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 23 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 24 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [Levent Alpöge](https://tr.wikipedia.org/wiki/Levent_Alp%C3%B6ge) · Türk matematikçi | 4,131 | ~0 | 82.6× |
-| 2 | [Emre Mor](https://tr.wikipedia.org/wiki/Emre_Mor) · Türk futbolcu (d. 1997) | 3,867 | ~102 | 37.9× |
-| 3 | [Ahmet Uluçay](https://tr.wikipedia.org/wiki/Ahmet_Ulu%C3%A7ay) · Türk sinemacı | 3,479 | ~15 | 69.6× |
-| 4 | [Büşra Develi](https://tr.wikipedia.org/wiki/B%C3%BC%C5%9Fra_Develi) · Türk dizi ve sinema oyuncusu | 3,178 | ~80 | 39.7× |
-| 5 | [Ertuğrul Dursun Önkuzu](https://tr.wikipedia.org/wiki/Ertu%C4%9Frul_Dursun_%C3%96nkuzu) · İşkence ile öldürülen ülkücü öğrenci | 2,790 | ~32 | 55.8× |
+| 1 | [Hikmet Çetin](https://tr.wikipedia.org/wiki/Hikmet_%C3%87etin) · Türk diplomat ve siyasetçi | 17,220 | ~64 | 269.1× |
+| 2 | [Eurocopter AS532 Cougar](https://tr.wikipedia.org/wiki/Eurocopter_AS532_Cougar) · çift motorlu, orta ağırlıkta, çok amaçlı askerî helikopter modeli | 16,091 | ~22 | 321.8× |
+| 3 | [Öğretmenler Günü](https://tr.wikipedia.org/wiki/%C3%96%C4%9Fretmenler_G%C3%BCn%C3%BC) · Kutlama Günü | 8,092 | ~118 | 68.6× |
+| 4 | [2027 UEFA ülkeler sıralaması](https://tr.wikipedia.org/wiki/2027_UEFA_%C3%BClkeler_s%C4%B1ralamas%C4%B1) | 8,325 | ~426 | 19.5× |
+| 5 | [Zion Suzuki](https://tr.wikipedia.org/wiki/Zion_Suzuki) · Japon futbolcu | 6,905 | ~26 | 138.1× |
 <!-- TODAY:END -->
 
 ## Why
