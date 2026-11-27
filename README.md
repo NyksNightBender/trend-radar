@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 25 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 26 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [2027 UEFA ülkeler sıralaması](https://tr.wikipedia.org/wiki/2027_UEFA_%C3%BClkeler_s%C4%B1ralamas%C4%B1) | 17,932 | ~426 | 42.1× |
-| 2 | [2026 UEFA ülkeler sıralaması](https://tr.wikipedia.org/wiki/2026_UEFA_%C3%BClkeler_s%C4%B1ralamas%C4%B1) | 8,519 | ~264 | 32.3× |
-| 3 | [Hikmet Çetin](https://tr.wikipedia.org/wiki/Hikmet_%C3%87etin) · Türk diplomat ve siyasetçi | 7,150 | ~64 | 111.7× |
-| 4 | [Hayati Yazıcı](https://tr.wikipedia.org/wiki/Hayati_Yaz%C4%B1c%C4%B1) · Türk politikacı | 6,843 | ~530 | 12.9× |
-| 5 | [Eurocopter AS532 Cougar](https://tr.wikipedia.org/wiki/Eurocopter_AS532_Cougar) · çift motorlu, orta ağırlıkta, çok amaçlı askerî helikopter modeli | 6,137 | ~23 | 122.7× |
+| 1 | [2027 UEFA ülkeler sıralaması](https://tr.wikipedia.org/wiki/2027_UEFA_%C3%BClkeler_s%C4%B1ralamas%C4%B1) | 34,355 | ~426 | 80.6× |
+| 2 | [Doğan Alemdar](https://tr.wikipedia.org/wiki/Do%C4%9Fan_Alemdar) · Türk millî futbolcu | 21,207 | ~16 | 424.1× |
+| 3 | [2026 UEFA ülkeler sıralaması](https://tr.wikipedia.org/wiki/2026_UEFA_%C3%BClkeler_s%C4%B1ralamas%C4%B1) | 16,309 | ~264 | 61.8× |
+| 4 | [2028 UEFA ülkeler sıralaması](https://tr.wikipedia.org/wiki/2028_UEFA_%C3%BClkeler_s%C4%B1ralamas%C4%B1) | 6,847 | ~76 | 89.5× |
+| 5 | [Gürcistan](https://tr.wikipedia.org/wiki/G%C3%BCrcistan) · Batı Asya ülkesi | 6,925 | ~275 | 25.2× |
 <!-- TODAY:END -->
 
 ## Why
