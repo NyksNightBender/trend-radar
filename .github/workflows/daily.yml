@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
     inputs:
       backfill:
-        description: "Also analyse this many past days"
+        description: "Look back this many days instead of 7 (only widens the window)"
         required: false
         default: "0"
   push:

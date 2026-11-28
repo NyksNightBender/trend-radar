@@ -54,7 +54,40 @@ def test_unpublished_day_is_retried_later(tmp_path: Path) -> None:
     api = FakeApi(published_until=DAY - timedelta(days=1))
     written = asyncio.run(run(store, api, Settings(), today=DAY + timedelta(days=1)))
     assert DAY not in written
-    assert DAY in target_days(store, DAY + timedelta(days=1))
+    assert DAY in target_days(store, DAY + timedelta(days=1), Settings())
+
+
+def test_catch_up_stops_at_the_window_edge(tmp_path: Path) -> None:
+    """Nothing stored yet, so the gap is longer than the window: only the window is filled."""
+    store = Store(tmp_path / "data")
+    today = DAY + timedelta(days=1)
+    settings = Settings()
+    days = target_days(store, today, settings)
+    oldest = today - timedelta(days=settings.catch_up_days)
+    assert days == [oldest + timedelta(days=i) for i in range(settings.catch_up_days)]
+    assert oldest - timedelta(days=1) not in days  # one day past the edge waits for a backfill
+
+
+def test_backfill_widens_the_window_but_never_narrows_it(tmp_path: Path) -> None:
+    store = Store(tmp_path / "data")
+    today = DAY + timedelta(days=1)
+    settings = Settings(catch_up_days=3)
+    assert target_days(store, today, settings, backfill=5)[0] == today - timedelta(days=5)
+    # Scheduled runs pass --backfill 0, which must not shrink the automatic window.
+    assert target_days(store, today, settings, backfill=0) == target_days(store, today, settings)
+    assert len(target_days(store, today, settings, backfill=1)) == 3
+
+
+def test_run_catches_up_over_the_configured_window(tmp_path: Path) -> None:
+    store = Store(tmp_path / "data")
+    today = DAY + timedelta(days=1)
+    written = asyncio.run(run(store, FakeApi(), Settings(catch_up_days=3), today=today))
+    assert written == [DAY - timedelta(days=2), DAY - timedelta(days=1), DAY]
+
+
+def test_readme_states_the_catch_up_window() -> None:
+    readme_text = (Path(__file__).parents[1] / "README.md").read_text(encoding="utf-8")
+    assert f"any of the last {Settings().catch_up_days} days" in readme_text
 
 
 class FlakyApi(FakeApi):
@@ -70,4 +103,4 @@ def test_one_failing_day_does_not_block_the_others(tmp_path: Path) -> None:
     store = Store(tmp_path / "data")
     written = asyncio.run(run(store, FlakyApi(), Settings(), today=DAY + timedelta(days=1)))
     assert DAY in written and DAY - timedelta(days=1) not in written
-    assert DAY - timedelta(days=1) in target_days(store, DAY + timedelta(days=1))  # retried later
+    assert DAY - timedelta(days=1) in target_days(store, DAY + timedelta(days=1), Settings())

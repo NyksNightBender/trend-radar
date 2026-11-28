@@ -36,8 +36,16 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--data", type=Path, default=Path("data"), help="data directory")
     sub = parser.add_subparsers(dest="command", required=True)
 
-    fetch = sub.add_parser("fetch", help="analyse yesterday (UTC) and any missed days")
-    fetch.add_argument("--backfill", type=int, default=0, help="also fill this many past days")
+    window = Settings().catch_up_days
+    fetch = sub.add_parser(
+        "fetch", help=f"analyse any of the last {window} days (UTC) still missing"
+    )
+    fetch.add_argument(
+        "--backfill",
+        type=int,
+        default=0,
+        help=f"look back this many days instead of {window} (only ever widens the window)",
+    )
     fetch.add_argument("--today", type=date.fromisoformat, default=None, help="pretend date")
 
     build = sub.add_parser("site", help="render the static site")
