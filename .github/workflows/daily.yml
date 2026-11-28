@@ -3,6 +3,7 @@ name: Daily radar
 # Four slots spread over the UTC day. GitHub can start scheduled runs hours late or skip
 # them, so whichever run first finds yesterday's data published does the work; later runs
 # see the file already exists and stop. Days are UTC days, like the contribution graph.
+# A later run still republishes the site if the last Pages deploy failed.
 on:
   schedule:
     - cron: "37 0 * * *"
@@ -29,6 +30,7 @@ jobs:
     timeout-minutes: 30
     permissions:
       contents: write
+      deployments: read # lets the decide step see whether the last Pages deploy worked
     outputs:
       publish: ${{ steps.decide.outputs.publish }}
     steps:
@@ -63,8 +65,22 @@ jobs:
         env:
           EVENT: ${{ github.event_name }}
           NEW: ${{ steps.fetch.outputs.new_days }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           if [ "$EVENT" != "schedule" ] || { [ -n "$NEW" ] && [ "$NEW" != "0" ]; }; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # No new data, but if the last deploy failed (GitHub Pages has outages), the live
+          # site is behind the data. Publish again now instead of waiting for tomorrow.
+          api="repos/$GITHUB_REPOSITORY/deployments"
+          id=$(gh api "$api?environment=github-pages&per_page=1" --jq '.[0].id // empty' || true)
+          state=""
+          if [ -n "$id" ]; then
+            state=$(gh api "$api/$id/statuses?per_page=1" --jq '.[0].state // empty' || true)
+          fi
+          if [ "$state" != "success" ]; then
+            echo "Last Pages deploy: ${state:-unknown}. Publishing again."
             echo "publish=true" >> "$GITHUB_OUTPUT"
           fi
 
