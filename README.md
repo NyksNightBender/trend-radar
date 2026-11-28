@@ -8,15 +8,15 @@
 **Live site: [nyksnightbender.github.io/trend-radar](https://nyksnightbender.github.io/trend-radar/)** (in Turkish, with an archive and an RSS feed)
 
 <!-- TODAY:START -->
-**Biggest jumps on Turkish Wikipedia, 26 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
+**Biggest jumps on Turkish Wikipedia, 27 November 2026** ([full list](https://nyksnightbender.github.io/trend-radar/))
 
 | # | Page | Views | Usual | Jump |
 | ---: | --- | ---: | ---: | ---: |
-| 1 | [2027 UEFA ülkeler sıralaması](https://tr.wikipedia.org/wiki/2027_UEFA_%C3%BClkeler_s%C4%B1ralamas%C4%B1) | 34,355 | ~426 | 80.6× |
-| 2 | [Doğan Alemdar](https://tr.wikipedia.org/wiki/Do%C4%9Fan_Alemdar) · Türk millî futbolcu | 21,207 | ~16 | 424.1× |
-| 3 | [2026 UEFA ülkeler sıralaması](https://tr.wikipedia.org/wiki/2026_UEFA_%C3%BClkeler_s%C4%B1ralamas%C4%B1) | 16,309 | ~264 | 61.8× |
-| 4 | [2028 UEFA ülkeler sıralaması](https://tr.wikipedia.org/wiki/2028_UEFA_%C3%BClkeler_s%C4%B1ralamas%C4%B1) | 6,847 | ~76 | 89.5× |
-| 5 | [Gürcistan](https://tr.wikipedia.org/wiki/G%C3%BCrcistan) · Batı Asya ülkesi | 6,925 | ~275 | 25.2× |
+| 1 | [2027 UEFA ülkeler sıralaması](https://tr.wikipedia.org/wiki/2027_UEFA_%C3%BClkeler_s%C4%B1ralamas%C4%B1) | 18,122 | ~426 | 42.5× |
+| 2 | [Doğan Alemdar](https://tr.wikipedia.org/wiki/Do%C4%9Fan_Alemdar) · Türk millî futbolcu | 12,182 | ~16 | 243.6× |
+| 3 | [Sera Kadıgil](https://tr.wikipedia.org/wiki/Sera_Kad%C4%B1gil) · Türk siyasetçi ve avukat | 11,709 | ~176 | 66.7× |
+| 4 | [2026 UEFA ülkeler sıralaması](https://tr.wikipedia.org/wiki/2026_UEFA_%C3%BClkeler_s%C4%B1ralamas%C4%B1) | 10,406 | ~264 | 39.4× |
+| 5 | [Hikmet Çetin](https://tr.wikipedia.org/wiki/Hikmet_%C3%87etin) · Türk diplomat ve siyasetçi | 9,422 | ~64 | 147.2× |
 <!-- TODAY:END -->
 
 ## Why
