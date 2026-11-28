@@ -48,7 +48,9 @@ flowchart LR
    Removed pages are still listed at the bottom of each day.
 5. Pages that are not articles (main page, search, categories) and adult content are left out.
 
-**Schedule.** The workflow runs four times a day (00:37, 06:37, 12:37 and 18:37 UTC). The first run after Wikimedia publishes yesterday's data does the work and commits it; later runs see the day is done and stop. Missed days are caught up automatically.
+**Schedule.** The workflow runs four times a day (00:37, 06:37, 12:37 and 18:37 UTC). The first run after Wikimedia publishes yesterday's data does the work and commits it; later runs see the day is done and stop.
+
+**Catching up.** Every run fills in any of the last 7 days (yesterday and the six days before it) that has no data yet, so a missed run or a Wikimedia delay of up to a week heals on its own. A longer gap needs a backfill: `trend-radar fetch --backfill 30` looks back 30 days instead of 7, or run the workflow by hand from the Actions tab with a backfill value. A backfill only ever widens the window. The 7 is `catch_up_days` in [`config.py`](src/trend_radar/config.py).
 
 ## Data
 
@@ -62,8 +64,8 @@ flowchart LR
 
 ```bash
 uv sync
-uv run trend-radar fetch                 # analyse yesterday (UTC) and any missed days
-uv run trend-radar fetch --backfill 14   # also fill the previous 14 days
+uv run trend-radar fetch                 # analyse any of the last 7 days (UTC) still missing
+uv run trend-radar fetch --backfill 30   # look back 30 days instead of 7
 uv run trend-radar site                  # render the site into _site/
 uv run pytest && uv run ruff check . && uv run mypy
 ```

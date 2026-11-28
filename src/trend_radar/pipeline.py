@@ -44,13 +44,15 @@ def utc_today() -> date:
     return datetime.now(UTC).date()
 
 
-def target_days(store: Store, today: date, backfill: int = 0, lookback: int = 7) -> list[date]:
-    """Yesterday, plus recent days that were missed or a requested backfill, oldest first.
+def target_days(store: Store, today: date, settings: Settings, backfill: int = 0) -> list[date]:
+    """Days still to analyse, oldest first.
 
-    Days are UTC days, the same calendar GitHub uses for the contribution graph.
+    Every missing day from yesterday back to `settings.catch_up_days` days ago, or back to
+    `backfill` days ago when that reaches further. Scheduled runs and manual backfills share
+    this one window. Days are UTC days, the same calendar GitHub uses for the contribution graph.
     """
-    span = max(lookback, backfill)
-    candidates = (today - timedelta(days=i) for i in range(1, span + 1))
+    window = max(settings.catch_up_days, backfill)
+    candidates = (today - timedelta(days=i) for i in range(1, window + 1))
     return sorted(d for d in candidates if not store.has_day(d))
 
 
@@ -206,7 +208,7 @@ async def run(
     store: Store, api: PageviewSource, settings: Settings, today: date, backfill: int = 0
 ) -> list[date]:
     """Analyses every missing day whose data is published. Returns the days written."""
-    targets = target_days(store, today, backfill)
+    targets = target_days(store, today, settings, backfill)
     if not targets:
         return []
     needed = {t - timedelta(days=i) for t in targets for i in range(settings.baseline_days + 1)}

@@ -78,6 +78,7 @@ SENSITIVE_WORDS = ("porno", "pornograf", "erotik", "seks filmi", "xxx")
 
 @dataclass(frozen=True)
 class Settings:
+    catch_up_days: int = 7  # each run fills in any missing day from yesterday back this far
     baseline_days: int = 28  # normal traffic = the previous four weeks
     history_days: int = 42  # length of the mini chart on the site
     min_views: int = 2_000  # ignore small pages
